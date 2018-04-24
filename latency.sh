@@ -36,7 +36,7 @@ latency_mtr() {
     flags="BAW"
     yellowhint "mtr ${domain} with ${num} trial(s)"
     sleep 3
-    mtr -4 -c ${num} -o ${flags} ${domain}  
+    mtr -4 -n -c ${num} -o ${flags} ${domain}  
 }
 
 latency_tcp_mtr() {
@@ -45,7 +45,7 @@ latency_tcp_mtr() {
     flags="BAW"
     yellowhint "mtr ${domain} with ${num} trial(s) using tcp packets"
     sleep 3
-    mtr -4 -T -c ${num} -o ${flags} ${domain}  
+    mtr -4 -Tn -c ${num} -o ${flags} ${domain}  
 }
 
 latency_udp_mtr() {
@@ -54,6 +54,6 @@ latency_udp_mtr() {
     flags="BAW"
     yellowhint "mtr ${domain} with ${num} trial(s) using udp packets"
     sleep 3
-    mtr -4 -u -c $num -o ${flags} ${domain} 
+    mtr -4 -un -c $num -o ${flags} ${domain} 
 }
 
