@@ -15,7 +15,7 @@ ploss_mtr() {
     flags="LDSR"
     yellowhint "mtr ${domain} with ${num} trial(s)"
     sleep 3
-    mtr -c ${num} -o ${flags} ${domain}  
+    mtr -4 -c ${num} -o ${flags} ${domain}  
 }
 
 ploss_tcp_mtr() {
@@ -24,7 +24,7 @@ ploss_tcp_mtr() {
     flags="LDSR"
     yellowhint "mtr ${domain} with ${num} trial(s) using tcp packets"
     sleep 3
-    mtr -T -c ${num} -o ${flags} ${domain}  
+    mtr -4 -T -c ${num} -o ${flags} ${domain}  
 }
 
 ploss_udp_mtr() {
@@ -33,6 +33,6 @@ ploss_udp_mtr() {
     flags="LDSR"
     yellowhint "mtr ${domain} with ${num} trial(s) using udp packets"
     sleep 3
-    mtr -u -c $num -o ${flags} ${domain} 
+    mtr -4 -u -c $num -o ${flags} ${domain} 
 }
 
