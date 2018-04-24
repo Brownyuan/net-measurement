@@ -11,8 +11,8 @@ source ./latency.sh
 source ./constants.sh
 
 VPS_FI() {
-    greenhint "LATENCY: VPS <-----> FI ${FI}"
-    latency_tcp_mtr ${FI}
+    greenhint "LATENCY: VPS <-----> FI"
+    loop latency_tcp_mtr FI
 }
 
 

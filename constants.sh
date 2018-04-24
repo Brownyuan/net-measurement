@@ -7,8 +7,8 @@
 # FI - Foreign Internet
 # CI - Chinese Internet
 
-AP=""
-SR=""
-VPS=""
-FI="google.com"
-CI="iqiyi.com"
+AP=("AP IP" "AP IP")
+SR=("" "")
+VPS=("" "")
+FI=("google.com" "youtube.com")
+CI=("iqiyi.com" "youku.com")

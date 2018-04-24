@@ -11,14 +11,14 @@ source ./packetloss.sh
 source ./constants.sh
 
 SR_VPS() {
-    greenhint "PACKET LOSS: SR <-----> VPS ${VPS}"
-    ploss_tcp_mtr ${VPS}
-    ploss_udp_mtr ${VPS}
+    greenhint "PACKET LOSS: SR <-----> VPS"
+    loop ploss_tcp_mtr VPS
+    loop ploss_udp_mtr VPS
 }
 
 SR_CI() {
-    greenhint "PACKET LOSS: SR <-----> CI ${CI}"
-    ploss_mtr ${CI}
+    greenhint "PACKET LOSS: SR <-----> CI"
+    loop ploss_mtr CI
 }
 
 

@@ -11,33 +11,34 @@ source ./latency.sh
 source ./constants.sh
 
 PC_AP() {
-    echo ""
+    greenhint "LATENCY: PC <-----> AP"
+    loop latency_mtr AP
 }
 
 PC_SR() {
-    greenhint "LATENCY: PC <-----> SR ${SR}"
-    latency_mtr ${SR}
+    greenhint "LATENCY: PC <-----> SR"
+    loop latency_mtr SR
 }
 
 
 PC_VPS() {
-    greenhint "LATENCY: PC <-----> VPS ${VPS}"
-    latency_mtr ${VPS}
+    greenhint "LATENCY: PC <-----> VPS"
+    loop latency_mtr VPS
 }
 
 PC_FI() {
-    greenhint "LATENCY: PC <-----> FI ${FI}"
-    latency_tcp_mtr ${FI}
+    greenhint "LATENCY: PC <-----> FI"
+    loop latency_tcp_mtr FI
 }
 
 PC_CI() {
-    greenhint "LATENCY: PC <-----> CI ${CI}"
-    latency_tcp_mtr ${CI}
+    greenhint "LATENCY: PC <-----> CI"
+    loop latency_tcp_mtr CI
 }
 
 
 
-#PC_AP
+PC_AP
 PC_SR
 PC_VPS
 PC_FI

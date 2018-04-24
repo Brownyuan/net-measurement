@@ -11,8 +11,8 @@ source ./packetloss.sh
 source ./constants.sh
 
 VPS_FI() {
-    greenhint "PACKET LOSS: VPS <-----> FI ${FI}"
-    ploss_mtr ${FI}
+    greenhint "PACKET LOSS: VPS <-----> FI"
+    loop ploss_mtr FI
 }
 
 

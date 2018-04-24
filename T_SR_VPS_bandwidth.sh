@@ -11,13 +11,13 @@ source ./bandwidth.sh
 source ./constants.sh
 
 SR_VPS_TCP() {
-    greenhint "BANDWIDTH: PC <-----> VPS ${VPS}"
-    bandwidth_iperf3_tcp ${VPS}
+    greenhint "BANDWIDTH: PC <-----> VPS"
+    loop bandwidth_iperf3_tcp VPS
 }
 
 SR_VPS_UDP() {
-    greenhint "BANDWIDTH: PC <-----> VPS ${VPS}"
-    bandwidth_iperf3_udp ${VPS}
+    greenhint "BANDWIDTH: PC <-----> VPS"
+    loop bandwidth_iperf3_udp VPS
 }
 
 SR_VPS_TCP
