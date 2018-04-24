@@ -12,7 +12,6 @@ source ./constants.sh
 
 SR_VPS() {
     greenhint "LATENCY: SR <-----> VPS"
-    loop latency_ping VPS
     loop latency_tcp_mtr VPS
     loop latency_udp_mtr VPS
 }
