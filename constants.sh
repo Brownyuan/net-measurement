@@ -10,5 +10,5 @@
 AP=""
 SR=""
 VPS=""
-FI="www.google.com"
-CI="www.iqiyi.com"
+FI="google.com"
+CI="iqiyi.com"
