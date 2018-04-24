@@ -2,7 +2,7 @@
 
 source ./lib.sh
 
-flow_ping() {
+ploss_flow_ping() {
     domain=$1
     num=10
     sudo ping -c ${num} -f ${domain}

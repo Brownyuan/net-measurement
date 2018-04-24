@@ -12,12 +12,14 @@ source ./constants.sh
 
 SR_VPS() {
     greenhint "PACKET LOSS: SR <-----> VPS"
+    loop ploss_flow_ping VPS
     loop ploss_tcp_mtr VPS
     loop ploss_udp_mtr VPS
 }
 
 SR_CI() {
     greenhint "PACKET LOSS: SR <-----> CI"
+    loop ploss_flow_ping CI
     loop ploss_mtr CI
 }
 

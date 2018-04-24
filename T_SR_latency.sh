@@ -12,13 +12,14 @@ source ./constants.sh
 
 SR_VPS() {
     greenhint "LATENCY: SR <-----> VPS"
+    loop latancy_ping VPS
     loop latency_tcp_mtr VPS
     loop latency_udp_mtr VPS
 }
 
 SR_CI() {
     greenhint "LATENCY: SR <-----> CI"
-    loop latency_mtr CI
+    loop latency_ping CI
 }
 
 

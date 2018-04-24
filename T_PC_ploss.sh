@@ -12,6 +12,7 @@ source ./constants.sh
 
 PC_AP() {
     greenhint "PACKET LOSS: PC <-----> AP ${AP}"
+    loop ploss_flow_ping AP
     loop ploss_mtr AP
 }
 
