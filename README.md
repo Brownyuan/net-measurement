@@ -44,15 +44,15 @@ A tool to diagnose network performance on different node. including latency, ban
  	* FI - Foreign Internet
  	* CI - Chinese Internet
  
- * On PC in intranet
+ * on PC in intranet
 
 ```
-	$ ./T_PC_lantency.sh
+	$ ./T_PC_latency.sh
 	$ ./T_PC_ploss.sh
 
 ```
 
- * On SR
+ * on SR
 
 ```
 	$ ./T_SR_latency.sh
@@ -60,7 +60,7 @@ A tool to diagnose network performance on different node. including latency, ban
 	$ ./T_SR_VPS_bandwidth.sh
 ```
 
-* On VPS
+* on VPS
 
 ```
 	$ ./T_VPS_latency.sh  
