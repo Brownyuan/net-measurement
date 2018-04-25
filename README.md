@@ -71,12 +71,6 @@ A tool to diagnose network performance on different node. including latency, ban
 
 # Logistics
 
-### Contributing
-
-Please read [CONTRIBUTING.md](https://github.com/FuQiFeiPian/net-measurement/blob/master/docs/CONTRIBUTING.md) for contributing.
-
-For details on our [code of conduct](https://github.com/FuQiFeiPian/net-measurement/blob/master/docs/CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
-
 ### Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the tags on this repository
@@ -86,10 +80,6 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 * **dorrywhale** - *Initial work* - [dorrywhale](https://github.com/dorrywhale)
 
 See also the list of [contributors](https://github.com/FuQiFeiPian/net-measurement/graphs/contributors) who participated in this project.
-
-### Acknowledgments
-
-See [Acknowledgments](https://github.com/FuQiFeiPian/net-measurement/blob/master/docs/ACKNOWLEDGMENTS.md)
 
 
 ### License
